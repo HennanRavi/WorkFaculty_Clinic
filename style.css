@@ -1,0 +1,98 @@
+/* 1. Aprimoramento Geral */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f0f0f0; /* Fundo mais claro */
+  color: #333; /* Cor do texto mais escura */
+  padding: 20px; /* Espaçamento interno */
+}
+
+h1 {
+  color: #007bff; /* Cor azul para o cabeçalho */
+}
+
+a {
+  color: #007bff; /* Cor azul para os links */
+  text-decoration: none; /* Remover sublinhado padrão */
+}
+
+a:hover {
+  text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}
+
+/* 2. Estilização dos Campos do Formulário com Ícones de Validade */
+input:invalid {
+  background-image: url("C:/Users/Notebook/OneDrive/Área de Trabalho/Programação/Pasta de Códigos/HTML/trabalho2/clínica/cadastro/invalid.png");
+  background-size: 20px 20px; /* Define o tamanho da imagem para 20x20 pixels */
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 30px; /* Aumenta o espaço para o ícone */
+}
+
+input:valid {
+  background-image: url("C:/Users/Notebook/OneDrive/Área de Trabalho/Programação/Pasta de Códigos/HTML/trabalho2/clínica/cadastro/valid.png");
+  background-size: 20px 20px; /* Define o tamanho da imagem para 20x20 pixels */
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding-right: 30px; /* Aumenta o espaço para o ícone */
+}
+
+/* 3. Regra para Estilizar o Cabeçalho com um Seletor de ID */
+#titulo-principal {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* 4. Regra para Estilizar os Campos de Entrada de Texto com um Seletor de Classe */
+.input-texto {
+  border: 1px solid #ccc; /* Borda cinza */
+  padding: 8px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  width: 100%; /* Largura total */
+}
+
+/* 5. Regra para Estilizar as Etiquetas dentro dos Campos de Formulário com um Seletor de Descendente */
+fieldset label {
+  font-weight: bold;
+}
+
+/* 6. Regra para Estilizar os Botões de Envio com um Seletor de Irmão Adjacente */
+input[type="submit"] {
+  background-color: #007bff; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de apontar */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+/* 7. Estilização dos Links Utilizando Pseudo-classes */
+a:visited {
+  color: #6610f2; /* Cor roxa para links visitados */
+}
+
+/* 8. Regra para Estilizar Campos de Entrada de Texto com uma Etiqueta Associada Utilizando a Pseudo-classe :has */
+input:invalid:has(+ label) {
+  color: red; /* Cor do texto vermelho quando inválido */
+}
+
+input:valid:has(+ label) {
+  color: green; /* Cor do texto verde quando válido */
+}
+
+/* 9. Regra para Estilizar os Elementos de Opção dentro de um Select Utilizando a Pseudo-classe :is */
+select:is(option) {
+  font-style: italic;
+}
+
+/* 10. Regra para Estilizar o Primeiro Filho de um Elemento Utilizando a Pseudo-classe :first-child */
+fieldset:first-child input[type="text"] {
+  border-color: #007bff;
+}
+
+/* 11. Regra para Estilizar o Primeiro Tipo de Entrada de Texto Utilizando a Pseudo-classe :first-of-type */
+fieldset input[type="text"]:first-of-type {
+  border-color: #007bff;
+}
