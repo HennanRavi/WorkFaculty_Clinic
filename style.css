@@ -21,7 +21,7 @@ a:hover {
 
 /* 2. Estilização dos Campos do Formulário com Ícones de Validade */
 input:invalid {
-  background-image: url("invalid.png");
+  background-image: url("register/invalid.png");
   background-size: 20px 20px;
   background-position: right center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ input:invalid {
 }
 
 input:valid {
-  background-image: url("valid.png");
+  background-image: url("register/valid.png");
   background-size: 20px 20px;
   background-position: right center;
   background-repeat: no-repeat;
