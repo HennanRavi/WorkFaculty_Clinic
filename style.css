@@ -21,19 +21,19 @@ a:hover {
 
 /* 2. Estilização dos Campos do Formulário com Ícones de Validade */
 input:invalid {
-  background-image: url("C:/Users/Notebook/OneDrive/Área de Trabalho/Programação/Pasta de Códigos/HTML/trabalho2/clínica/cadastro/invalid.png");
-  background-size: 20px 20px; /* Define o tamanho da imagem para 20x20 pixels */
+  background-image: url("invalid.png");
+  background-size: 20px 20px;
   background-position: right center;
   background-repeat: no-repeat;
-  padding-right: 30px; /* Aumenta o espaço para o ícone */
+  padding-right: 30px;
 }
 
 input:valid {
-  background-image: url("C:/Users/Notebook/OneDrive/Área de Trabalho/Programação/Pasta de Códigos/HTML/trabalho2/clínica/cadastro/valid.png");
-  background-size: 20px 20px; /* Define o tamanho da imagem para 20x20 pixels */
+  background-image: url("valid.png");
+  background-size: 20px 20px;
   background-position: right center;
   background-repeat: no-repeat;
-  padding-right: 30px; /* Aumenta o espaço para o ícone */
+  padding-right: 30px;
 }
 
 /* 3. Regra para Estilizar o Cabeçalho com um Seletor de ID */
